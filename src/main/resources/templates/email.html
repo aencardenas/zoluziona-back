@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Correo de Zoluziona</title>
+</head>
+<body>
+
+<h1 style="color: rgb(37,56,125)">¡Hola Zoluziona!</h1>
+<h2 style="color: black"><strong th:text="${name} + ' ' + ${lastName}"></strong> dice lo siguiente:</h2>
+<p style="color: black" th:text="${message}"></p>
+
+<p>Puedes contactarlo por los siguientes medios:</p>
+<ul>
+    <li>Número: <span th:text="${phoneNumber}"></span></li>
+    <li>Email: <span th:text="${email}"></span></li>
+</ul>
+
+</body>
+</html>
