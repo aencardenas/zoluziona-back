@@ -29,6 +29,7 @@ public class EmailServiceImpl implements IEmailService {
             MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
 
             helper.setTo("math4everyone6@gmail.com");
+            helper.setCc("aencardenas@gmail.com");
             helper.setSubject("Consulta de baterías Zoluziona");
 
             Context context = new Context();
